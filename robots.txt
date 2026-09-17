@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-# Add the definitive sitemap URL here after configuring the production domain.
+Sitemap: https://sysprint.netlify.app/sitemap.xml

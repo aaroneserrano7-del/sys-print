@@ -1,6 +1,8 @@
 (() => {
   'use strict';
 
+  document.documentElement.classList.replace('no-js', 'js');
+
   const menuToggle = document.querySelector('[data-menu-toggle]');
   const menuClose = document.querySelector('[data-menu-close]');
   const navigation = document.querySelector('[data-navigation]');

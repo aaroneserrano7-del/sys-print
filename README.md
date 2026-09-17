@@ -74,7 +74,9 @@ El sitio no se compila ni transpila: se publica como archivos estáticos. El bui
 ├── _redirects        # Redirecciones estáticas
 ├── netlify.toml      # Build y directorio de publicación
 ├── robots.txt        # Directivas de rastreo
+├── sitemap.xml       # Sitemap del sitio publicado
 ├── .env.example      # Plantilla segura para futuros secretos
+├── .gitattributes    # Finales de línea consistentes para Git y Netlify
 └── package.json      # Comandos locales
 ```
 
@@ -106,7 +108,7 @@ Netlify entrega los archivos desde CDN y aplica `_headers` y `_redirects`. En la
 2. Configura los registros DNS exactamente como Netlify indique; no supongas valores de A, CNAME o nameservers.
 3. Elige una URL canónica (con o sin `www`) y redirige la otra desde Netlify.
 4. Espera a que Netlify confirme el certificado HTTPS.
-5. Cuando exista el dominio definitivo, añade `link rel="canonical"`, las URL absolutas de Open Graph, un `sitemap.xml` con URLs reales y su referencia en `robots.txt`.
+5. La versión actual usa `https://sysprint.netlify.app/` como URL canónica, Open Graph y sitemap. Cuando exista un dominio propio, actualiza esas referencias y la URL del sitemap en `robots.txt` en el mismo cambio.
 
 El header HSTS se entrega para HTTPS de Netlify sin `includeSubDomains` ni `preload`. Ambas opciones solo deben evaluarse después de verificar que el dominio raíz y todos los subdominios necesarios funcionen exclusivamente mediante HTTPS.
 
