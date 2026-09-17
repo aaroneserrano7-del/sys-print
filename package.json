@@ -1,0 +1,11 @@
+{
+  "name": "sys-print-site",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Sitio estático oficial de SYS PRINT.",
+  "scripts": {
+    "dev": "npx --yes serve@14.2.4 . --listen 3000 --no-clipboard",
+    "build": "node --check script.js",
+    "preview": "npx --yes serve@14.2.4 . --listen 4173 --no-clipboard"
+  }
+}
